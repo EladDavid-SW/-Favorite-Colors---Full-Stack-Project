@@ -1,1 +1,1 @@
-# -Favorite-Colors---Full-Stack-Project
+# Favorite Colors Full-Stack Project
