@@ -9,7 +9,7 @@ const getColor = async (req, res) => {
     color_service.getColor(id, res)
   } catch (error) {
     console.log(error)
-    return res.status(400).end()
+    return res.status(500).end()
   }
 }
 
@@ -18,7 +18,7 @@ const getColors = async (req, res) => {
     color_service.getColors(res)
   } catch (error) {
     console.log(error)
-    return res.status(400).end()
+    return res.status(500).end()
   }
 }
 
@@ -31,7 +31,7 @@ const createColor = async (req, res) => {
     color_service.createColor(body_parameters, res)
   } catch (error) {
     console.log(error)
-    return res.status(400).end()
+    return res.status(500).end()
   }
 }
 
@@ -45,7 +45,7 @@ const updateColor = async (req, res) => {
     color_service.updateColor(body_parameters, id, res)
   } catch (error) {
     console.log(error)
-    return res.status(400).end()
+    return res.status(500).end()
   }
 }
 
@@ -58,7 +58,7 @@ const deleteColor = async (req, res) => {
     color_service.deleteColor(id, res)
   } catch (error) {
     console.log(error)
-    return res.status(400).end()
+    return res.status(500).end()
   }
 }
 

@@ -3,7 +3,7 @@ const path = require('path')
 
 const dataPath = path.resolve(__dirname, 'data.json')
 
-const readFile = async (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {
+const readFile = async () => {
   try {
     return fs.readFileSync(dataPath, 'utf8')
   } catch (err) {
@@ -11,9 +11,9 @@ const readFile = async (callback, returnJson = false, filePath = dataPath, encod
   }
 }
 
-const writeFile = async (fileData, callback, filePath = dataPath, encoding = 'utf8') => {
+const writeFile = async (fileData) => {
   try {
-    return fs.writeFileSync(filePath, JSON.stringify(fileData))
+    return fs.writeFileSync(dataPath, JSON.stringify(fileData))
   } catch (err) {
     console.error(err)
   }
