@@ -1,4 +1,4 @@
 # Favorite Colors Back-End Project
 
-NodeJs with Express
-Color resource CRUD.
+NodeJs with Express.
+Manage color resource using CRUD.
